@@ -1,9 +1,10 @@
 #python3
 import socket
 
-HOST = ''
+HOST = '' 	# Symbolic name meaning all available interfaces
 PORT = 8888
 
+# create socket objects
 listen_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 listen_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 listen_socket.bind((HOST, PORT))
