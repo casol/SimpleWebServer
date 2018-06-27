@@ -15,6 +15,8 @@ print('Serving HTTP on port {}'.format(PORT))
 while True:
 	client_connection, client_address = listen_socket.accept()
 	print(client_connection)
+	print('space')
+	print(client_address)
 	request = client_connection.recv(1024)
 	print(request)
 
